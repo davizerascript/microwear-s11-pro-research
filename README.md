@@ -1,46 +1,40 @@
 # Pesquisa de firmware — Microwear S11 Pro
 
-Projeto de engenharia reversa estática para documentar o firmware fornecido e investigar se existe uma base para desenvolvimento alternativo. **Ainda não é um sistema operacional alternativo, SDK/BSP completo nem método de instalação.**
+Engenharia reversa estática do firmware fornecido para documentar seus formatos e avaliar caminhos de desenvolvimento alternativo. **Este repositório ainda não contém uma OS alternativa, um SDK/BSP completo nem um método seguro de instalação.**
 
-**Dispositivo:** Microwear S11 Pro (modelo informado pelo usuário; a identidade comercial/revisão não foi confirmada só pelos bytes). **Versão explícita do pacote:** o arquivo aninhado `ui_upgrade/upgrade.json` declara `version_id: "W002"`. `W002` é preservado como identificador literal; não foi convertido em versão semântica. O campo JCRT separado `ver_info` apresenta `VER=0x0000` pela interpretação local e não é considerado a versão do pacote. Veja [o achado de versão](docs/component-findings/upgrade_json.md).
+**Modelo:** Microwear S11 Pro, conforme informado pelo proprietário; marca comercial e revisão física não foram confirmadas apenas pelos bytes. **Versão declarada no pacote:** `ui_upgrade/upgrade.json` contém `version_id: "W002"`. Isso é preservado como identificador literal, não como versão semântica. O campo separado JCRT `ver_info` não foi usado como versão do pacote. Veja [upgrade_json.md](docs/component-findings/upgrade_json.md).
 
-## Estado atual
+## O que os arquivos permitem fazer agora
 
-O firmware original foi preservado e analisado em cópias. Cabeçalhos e lista UFW conferem; o `flash.bin` foi percorrido estruturalmente como JLFS. Foram corrigidos relatórios de CRC do cabeçalho flash e do `uboot.boot`, e a sinalização JLFS `0x40` foi associada a LZ4 conforme documentação pública. O payload ainda não foi descomprimido com LZ4.
+O corpus público permite reproduzir e ampliar a análise offline: verificar a estrutura externa UFW, percorrer o JLFS extraído, conferir CRCs e comparar componentes pelo inventário e pelos hashes. O inventário documenta 9 entradas UFW e 17 entradas/âncoras JLFS. As ferramentas estão em `tools/`; consulte [tool-audit.md](docs/tool-audit.md), pois algumas dependem do layout de trabalho e de referências externas, e ainda não são um pacote genérico pronto para qualquer firmware.
 
-Foi possível compilar um objeto relocatable ELF32 para `pi32v2-r3` a partir de um scaffold mínimo. Não foi feita linkagem de firmware, teste no relógio, escrita de flash, OTA ou instalação. O projeto Ghidra usa base `0x0` escolhida pelo analista e tem conflitos/P-code errors; suas contagens não são contagens verdadeiras de código do dispositivo. Controladores de display/touch não foram confirmados fisicamente.
+O `app.bin` e os projetos Ghidra disponíveis permitem procurar candidatos a rotinas de inicialização, chamadas e referências a periféricos. Esse trabalho precisa ser validado: a base `0x0` é provisória, há conflitos de decodificação e erros de P-code, e as contagens do Ghidra não representam funções ou instruções confirmadas do aparelho.
 
-Leia primeiro [PROGRESSO.md](PROGRESSO.md), o [mapa JLFS das 17 entradas](docs/partition-map.md), o [inventário JSON sanitizado](docs/jlfs-inventory.json), [a auditoria CRC](docs/integrity-audit.md), [os achados de hardware/Ghidra](docs/hardware-findings.md) e [a auditoria das ferramentas](docs/tool-audit.md).
+Os recursos brutos `upgrade.res`, `upgrade.str` e `upgrade.sty` podem servir de base para desenvolver parsers e visualizadores. Ainda não foi demonstrado um decodificador semântico RU30/`.sty`. O companion BCSDIAL permite estudar o formato; foram extraídos 50 JPEGs válidos por carving, mas isso não é um parser do contêiner nem confirma a resolução do display.
 
-Os relatórios mascaram identificadores e omitem bytes de `link_key`, material de chave e campos opacos potencialmente sensíveis. Os mapas e hashes permitem comparar estruturas sem publicar o firmware ou esses valores.
+O arquivo `config.dat` pode ser usado para estudar a estrutura JCRT: os CRCs de cabeçalho, descritores e sete payloads foram validados. Ele contém um campo de 16 bytes chamado `link_key`, mas sua função, unicidade e uso pelo relógio não foram estabelecidos. O arquivo pertence ao pacote OTA, não a um dump da memória em uso; o campo `serial_num` tem formato parecido com um template. **Não há evidência suficiente para classificar esse campo como credencial ativa, segredo exclusivo ou vulnerabilidade.** Veja [config_dat.md](docs/component-findings/config_dat.md).
 
-## Diretórios
+A toolchain JieLi disponível foi capaz de compilar um objeto relocatable ELF32 para `pi32v2-r3` a partir de um scaffold mínimo. Isso permite experimentar com compilação de código isolado, mas não produz um executável para o relógio.
 
-- `docs/`: resultados, fontes, limitações, hashes e relatórios.
-- `firmware/`: scaffold pi32v2 não flashável, usado apenas para validar compilação de objeto.
-- `tools/`: scripts locais para inventário, CRC e extração limitada.
-- `original/` e `work/`: dados originais, extrações, projetos e dependências locais; devem permanecer fora de uma publicação pública.
+## O que ainda não é possível afirmar ou fazer com segurança
 
-## Segurança
+Ainda não há evidência suficiente para identificar fisicamente display, touchscreen, RAM, flash ou revisão da placa. Strings como `sh8601`, `gc9b71` e `bcs_touch` são pistas no binário, não confirmação dos componentes montados.
 
-**Não instale, transmita nem grave nenhum artefato experimental no relógio.** Ainda não existe método de recuperação confirmado para este exemplar. Antes de qualquer escrita seriam necessários, no mínimo, dump restaurável da memória, identificação física da revisão/ICs, pinout comprovado e um procedimento de recuperação de bootloader/ISP demonstrado.
+Não há startup, linker script, mapa de memória, BSP/drivers identificados para esta PCB nem imagem alternativa inicializável. O objeto de teste não foi linkado, executado no hardware ou instalado. Não foi estabelecido um procedimento de recuperação comprovado para este exemplar. Portanto, **não grave, transmita nem instale artefatos experimentais no relógio**.
 
-Não publique firmware original, dumps extraídos, watchfaces/imagens, bancos Ghidra ou pacotes de toolchain/SDK sem confirmar os direitos de redistribuição. Hashes e análises textuais podem documentar a amostra sem redistribuir seus bytes. O `.gitignore` evita alguns desses arquivos por padrão, mas não remove arquivos já rastreados.
+Próximas pesquisas úteis são: (1) decodificar e visualizar RU30/`.sty` sem modificar o original; (2) refinar o ponto de entrada e o mapa de memória do `app.bin` usando evidências do bootloader/SDK; (3) localizar e validar BSP, linker script e drivers compatíveis; (4) identificar a PCB e seus componentes por fotos/dump somente de leitura; e (5) comprovar uma recuperação restaurável antes de qualquer teste que escreva no dispositivo.
 
-## Licença
+## Conteúdo e segurança do branch público
 
-A licença MIT deste repositório cobre o código, a documentação e o scaffold originais disponibilizados aqui. Ela não concede direitos sobre firmware, imagens, marcas ou outros materiais de terceiros; esses binários e recursos não fazem parte do repositório.
+O branch `main` contém atualmente 296 arquivos rastreados, incluindo os dois binários recebidos, arquivos UFW/JLFS extraídos, recursos, imagens do companion, projetos/logs Ghidra e artefatos exploratórios. Assim, avisos antigos que descreviam esses itens como “apenas locais” não refletem o conteúdo atual do branch. A publicação dos bytes não demonstra, por si só, que contenham dados pessoais ou uma vulnerabilidade; campos opacos ainda não foram totalmente caracterizados. A avaliação específica de `config.dat` está em [config_dat.md](docs/component-findings/config_dat.md).
 
-## Reprodução local
+A licença MIT cobre somente código, documentação e scaffold originais deste projeto. Ela não concede direitos sobre firmware, imagens, marcas ou outros materiais de terceiros. Confirme os direitos aplicáveis antes de redistribuir esses materiais fora deste repositório.
 
-Os scripts que operam sobre arquivos exigem cópias locais em `original/` e alguns ainda dependem do checkout de referência JieLi em `work/jieli-research/`. O checkout de referência, seus executáveis e o SDK não são incorporados a uma instalação limpa. Consulte [tool-audit.md](docs/tool-audit.md) antes de executar qualquer script; não use caminhos de saída já existentes.
+## Navegação
 
-A ferramenta [audit_integrity.py](tools/audit_integrity.py) é a mais independente: lê o UFW e imprime relatório CRC; use `--out` somente para um destino novo. `extract_jlfs.py` ainda está amarrada ao layout local do workspace e não deve ser apresentada como ferramenta genérica pronta para publicação.
-
-## Próximas lacunas
-
-1. Fotografias macro da placa e identificação física de flash/RAM/display/touch.
-2. Dump read-only de memória física e mapeamento verificável de boot/endereço de carga.
-3. SDK/BSP e linker script compatíveis com a revisão da PCB.
-4. Decodificador confiável para RU30/`.sty` e parser semântico BCSDIAL.
-5. Caminho de recuperação original comprovado antes de qualquer teste que escreva no dispositivo.
+- [Progresso técnico detalhado](PROGRESSO.md)
+- [Mapa JLFS](docs/partition-map.md) e [inventário JSON](docs/jlfs-inventory.json)
+- [Auditoria de integridade/CRC](docs/integrity-audit.md)
+- [Achados de hardware e limitações do Ghidra](docs/hardware-findings.md)
+- [Achados por componente](docs/componentes-detalhados.md)
+- [Auditoria das ferramentas](docs/tool-audit.md)
