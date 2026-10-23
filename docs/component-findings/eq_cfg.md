@@ -1,0 +1,11 @@
+# `eq_cfg_hw.bin` — achados
+
+O artefato tem **4.081 bytes** (SHA-256 `645acbb8426c148dbd859eb8689d2b31058f9d4798d97e82d5c1581cb902f51c`; MD5 `4640618af30eece4d5c7c8f70702e55b`). Começa `02 01 00 00 00 fd ff 36 00 03 04 00 1c 00 7c 00...`; não há magic textual evidente. As sequências imprimíveis detectadas são fragmentos incidentais como `333?`, não rótulos ou strings legíveis. Interpretação como palavras IEEE-754 de 32 bits não é plausível para o início; há muitos valores pequenos/campos curtos em little-endian, compatíveis com tabela/estrutura binária, mas não foi possível atribuir offsets a campos com segurança. CRC-32 padrão do payload: `0xfd0baaba`; Adler-32: `0xa8c9dc79`. Conforme o contexto fornecido, CRC JLFS do contêiner confere; isso valida a integridade JLFS, não decodifica a carga útil.
+
+**Classificação:** provável configuração binária de áudio/EQ ou efeito de áudio JieLi, não um formato autodescritivo identificável. Uma fonte pública no SDK **BR23** copia para o nome `eq_cfg_hw.bin` arquivos selecionados de `effect_file` conforme opções de efeito de microfone (reverb/echo/megaphone), roteamento 2→1/2→2, EQ de line-in ou EQ base. Isso sustenta a associação do nome a configuração de efeitos/EQ, mas é evidência de outro alvo SDK: não demonstra que este blob tenha sido gerado por esse SDK nem sua compatibilidade com JL701N. [1]
+
+O repositório local `jl-misctools` contém ferramentas para outros formatos (incluindo RU2), mas não foi identificado nelas parser aplicável a este payload; RU2 possui magic `RU2\x19`, ausente aqui. Não foram executados empacotadores, gravadores ou operações de hardware. Para decodificar campos e identificar variante/compatibilidade faltam parser/definição da estrutura correspondente ao alvo do firmware, ou binário de referência equivalente com proveniência confirmada; somente nome, padrões numéricos e a referência BR23 não bastam.
+
+## Referências
+
+[1]: https://gitlab.zh-jieli.com/soundbox/novisualization/ac695n_soundbox_sdk/-/raw/bd84e3897269f96b334123ba0ea31aa2cdd2f17f/cpu/br23/tools/download.c "SDK JieLi ac695n soundbox, script download.c para BR23"

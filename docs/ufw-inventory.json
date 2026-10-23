@@ -1,0 +1,105 @@
+{
+  "source_file": "176103986767848.ufw (original excluded from public repository)",
+  "input_sha256": "0ad4460ba411122f934a292a5ea78294158a4e21af9dabbe72f920324f623b43",
+  "header_crc16": 21396,
+  "list_crc16": 53433,
+  "declared_size": 2557568,
+  "chip": "JL701N",
+  "entries": [
+    {
+      "slot": 0,
+      "type": 0,
+      "index": 0,
+      "data_crc16": 54869,
+      "offset": 1024,
+      "size": 2428928,
+      "name": "flash.bin",
+      "extracted_file": "00_flash.bin.bin",
+      "sha256": "cc524f4a562c80ef91165f74dc384a9e28c289b9f4b9da4b32695ca00bd86eed"
+    },
+    {
+      "slot": 1,
+      "type": 2,
+      "index": 1,
+      "data_crc16": 0,
+      "offset": 2429952,
+      "size": 0,
+      "name": "info.log"
+    },
+    {
+      "slot": 2,
+      "type": 55,
+      "index": 2,
+      "data_crc16": 20163,
+      "offset": 2429952,
+      "size": 32,
+      "name": "uboot.version",
+      "extracted_file": "02_uboot.version.bin",
+      "sha256": "78702e1e4104e63ad0480bbfb750b323b2d711bcf660a9b8fe1ed4f06a70d04f"
+    },
+    {
+      "slot": 3,
+      "type": 52,
+      "index": 3,
+      "data_crc16": 43892,
+      "offset": 2429984,
+      "size": 1273,
+      "name": "isd_config.ini",
+      "extracted_file": "03_isd_config.ini.bin"
+    },
+    {
+      "slot": 4,
+      "type": 56,
+      "index": 4,
+      "data_crc16": 25221,
+      "offset": 2431264,
+      "size": 64,
+      "name": "v_ota.bin",
+      "extracted_file": "04_v_ota.bin.bin",
+      "sha256": "0f1ac1ad30da940ea2186fcb30251a218377e57eb3c038f3c4e8bce615a80f33"
+    },
+    {
+      "slot": 5,
+      "type": 100,
+      "index": 5,
+      "data_crc16": 3618,
+      "offset": 2431328,
+      "size": 125966,
+      "name": "ota.bin",
+      "extracted_file": "05_ota.bin.bin",
+      "sha256": "97695ea71986c811e028258643b7d2a0e276776947856ddf4a9cb56f6e4603cc"
+    },
+    {
+      "slot": 6,
+      "type": 251,
+      "index": 6,
+      "data_crc16": 33554,
+      "offset": 2557312,
+      "size": 5,
+      "name": "farg.cfg",
+      "extracted_file": "06_farg.cfg.bin",
+      "sha256": "08491ba40a2044339a42450e38cc46df2bad02f9f48c7efb7ff48e8e8d8e4b80"
+    },
+    {
+      "slot": 7,
+      "type": 161,
+      "index": 7,
+      "data_crc16": 23112,
+      "offset": 2557344,
+      "size": 144,
+      "name": "blimit.bin",
+      "extracted_file": "07_blimit.bin.bin"
+    },
+    {
+      "slot": 8,
+      "type": 255,
+      "index": 8,
+      "data_crc16": 194,
+      "offset": 2557504,
+      "size": 64,
+      "name": "tail.bin",
+      "extracted_file": "08_tail.bin.bin",
+      "sha256": "f64fea329a5112f489a8d99d201b4973a8b2ab3cc2e926eb4823ae11cec9231d"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "format": "JieLi SYS_CFG_PARAM compact records (structure observed in this sample)",
+  "source": {
+    "path": "work/decoded/jlfs/00000040_isd_config.ini",
+    "size_bytes": 127,
+    "container": "flash.bin JLFS top-level entry",
+    "jlfs_header_offset": "0x40",
+    "jlfs_data_offset": "0x164f",
+    "jlfs_data_crc16_stored": "0x0692",
+    "jlfs_data_crc16_matches_extracted_bytes": true
+  },
+  "same_name_external_ufw_entry": {
+    "path": "work/extracted/03_isd_config.ini.bin",
+    "size_bytes": 1273,
+    "offset": "0x251420",
+    "crc16_stored": "0xab74",
+    "crc16_raw_calculated": "0x80f1",
+    "status": "distinct opaque UFW-level component; not the source parsed below; raw CRC scope unresolved"
+  },
+  "opaque_prefix_bytes": 32,
+  "opaque_check_bytes": 2,
+  "records_offset": 34,
+  "records": [
+    {
+      "key": "SPI",
+      "length": 7,
+      "hex": "345f335f305f30",
+      "text": "4_3_0_0"
+    },
+    {
+      "key": "UTTX",
+      "length": 4,
+      "hex": "50423038",
+      "text": "PB08"
+    },
+    {
+      "key": "UTBD",
+      "length": 4,
+      "hex": "40420f00",
+      "uint32_le": 1000000
+    },
+    {
+      "key": "EX_FLASH",
+      "length": 12,
+      "hex": "504330335f31415f50433038",
+      "text": "PC03_1A_PC08"
+    },
+    {
+      "key": "EX_FLASH_IO",
+      "length": 26,
+      "hex": "345f504330315f504330325f504330345f504330355f50433030",
+      "text": "4_PC01_PC02_PC04_PC05_PC00"
+    }
+  ],
+  "warning": "Campos e valores são decodificados, mas semântica/pinagem exige documentação da revisão da placa. Este JSON descreve apenas o payload JLFS interno de 127 bytes; não descreve o componente externo UFW de 1273 bytes com o mesmo nome."
+}

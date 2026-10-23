@@ -1,0 +1,31 @@
+# Mapa JLFS da imagem `flash.bin`
+
+A tabela abaixo resume os 17 registros superiores presentes no manifesto JLFS da cópia extraída. O mapa integral de offsets, flags, CRCs, filhos e fingerprints está em [jlfs-inventory.json](jlfs-inventory.json), uma exportação que omite bytes de payload e material de chave.
+
+**Leitura importante:** `within_flash_dump=false` significa que o registro descreve uma região/tamanho de partição, mas o payload correspondente não está presente na imagem UFW examinada. Não trate o valor `size` como bytes extraídos nem como prova de conteúdo. CRC de header válido confirma a estrutura do registro; CRC de dados só é comparável nos escopos indicados no inventário.
+
+| Registro | Offset do header | Tamanho/campo | O que se pode afirmar | Função possível / limite |
+|---|---:|---:|---|---|
+| `uboot.boot` | `0x20` | 5.551 B | Payload presente; header confere. CRC de dados raw é diferente porque os bytes estão bankcb-scrambled; após descramble o CRC JLFS confere. Flag `0x40`. | Provável SPL/estágio inicial de boot. LZ4 é documentado para esta flag/família; nenhuma descompressão foi executada. Ver [uboot.md](component-findings/uboot.md). |
+| `isd_config.ini` | `0x40` | 127 B | Payload presente; registros compactos parcialmente interpretados. | Configuração de placa/periféricos segundo os nomes de campos; não identifica sozinha a PCB montada. Valores que parecem chave foram omitidos. |
+| `app_dir_head` | `0x60` | `size_field=0xFFFFFFFF` | Registro estrutural de início da área de aplicação; valor não é um tamanho de payload utilizável. | Delimitação/descrição da área no formato do firmware; detalhes internos do parser são hipótese de implementação. |
+| `key_mac` | `0x80` | 4.096 B no mapa; `within_flash_dump=false` | Apenas label/descritor e CRC de header disponíveis; nenhum payload de 4.096 B foi recuperado do pacote. | O nome sugere material de chave/endereço MAC, mas isso não foi provado. Tratar como potencialmente sensível; nenhum valor de chave é publicado. |
+| `app_area_head` | `0x2000` | 2.159.643 B | Região presente; CRC calculado sobre os bytes salvos confere. Ela abrange entradas-filhas, que se sobrepõem por desenho. | Cabeçalho/região que organiza a área de aplicação. Ver registros-filhos abaixo e inventário JSON. |
+| `app.bin` | `0x2020` | 2.158.452 B | Payload de aplicação presente; CRC JLFS confere. Contém rótulos/strings de app e nomes de drivers. | Principal candidato a código da aplicação. O listing Ghidra não prova limites de código, endereços nem componentes físicos; ver [app_bin.md](component-findings/app_bin.md) e [hardware-findings.md](hardware-findings.md). |
+| `cfg_tool.bin` | `0x2040` | 935 B | Payload presente; CRC JLFS confere; 20 rótulos `AC701N_*` observados. | Provável recurso de configuração JieLi, mas os campos internos e a compatibilidade com este firmware não foram decodificados. Ver [cfg_tool.md](component-findings/cfg_tool.md). |
+| `VM` | `0x2060` | 778.240 B no mapa; `within_flash_dump=false` | Descritor de região sem payload correspondente no UFW. | “VM” pode sugerir área de variáveis/armazenamento, mas isso é apenas leitura do nome. Função não confirmada. |
+| `PRCT` | `0x2080` | 2.428.928 B no mapa; `within_flash_dump=false` | Descritor de região sem payload correspondente no UFW. | Significado não estabelecido; não se expande a sigla por suposição. |
+| `BTIF` | `0x20A0` | 4.096 B no mapa; `within_flash_dump=false` | Descritor de região sem payload correspondente no UFW. | Pode referir-se a informação/interface Bluetooth pelo nome, mas isso é hipótese; conteúdo ausente. |
+| `FATFSI` | `0x20C0` | 131.072 B no mapa; `within_flash_dump=false` | Descritor de região sem payload correspondente no UFW. | O nome sugere área relacionada a FAT/file-system, mas formato e uso não foram provados. |
+| `EXT_RESERVED` | `0x21143B` | 64 B | Diretório/região presente; CRCs do header e dados conferem; há dois filhos registrados. | A palavra “reserved” é o label do firmware, não uma descrição completa dos filhos ou da função. |
+| `tone` | `0x21149B` | 202.144 B | Diretório presente; CRCs conferem. Contém `index.idx`, dois `.wtg` opacos e dez MP3 reconhecidos. | Recursos de áudio/tons. Presença e estrutura confirmadas; não foi determinado quando o firmware os reproduz. Ver [tone_index.md](component-findings/tone_index.md). |
+| `ui_upgrade` | `0x242A5B` | 35.190 B | Diretório presente; CRCs conferem. Contém `upgrade.json`, `.res`, `.str` e `.sty`. O JSON declara `version_id=W002`. | Recursos da interface de atualização. Os três recursos `RU30` não foram semanticamente decodificados. Ver [upgrade_json.md](component-findings/upgrade_json.md) e os relatórios `upgrade_*`. |
+| `p11_code.bin` | `0x24B3F1` | 15.112 B | Payload presente; CRC JLFS confere; conteúdo interno permanece binário. | Provável componente de recurso/código P11 para empacotamento JieLi; isso vem de referências de outro alvo e não prova uso/compatibilidade aqui. Ver [p11_code.md](component-findings/p11_code.md). |
+| `config.dat` | `0x24EF19` | 384 B | Estrutura JCRT reconhecida; self-CRC, CRC de sete descritores e CRCs dos payloads conferem. | Configuração de campos de versão/ID/IO/chave/energia. Valores de serial, token opaco e chave foram redigidos. Ver [config_dat.md](component-findings/config_dat.md). |
+| `eq_cfg_hw.bin` | `0x24F0B9` | 4.081 B | Payload presente; CRC JLFS confere; estrutura interna não identificada. | Nome e referência a outro SDK sugerem configuração de EQ/efeitos; não é um decoder nem compatibilidade provada para JL701N. Ver [eq_cfg.md](component-findings/eq_cfg.md). |
+
+## Interpretação global
+
+Os labels permitem construir um mapa inicial de partições e recursos, mas não um mapa de RAM/flash física completo. Registros de regiões ausentes (`VM`, `PRCT`, `BTIF`, `FATFSI`, `key_mac`) não autorizam inventar bytes ou funções. A definição de cada partição precisa ser confirmada com SDK/linker/BSP específico e, idealmente, um dump somente de leitura do próprio relógio.
+
+O pacote se identifica estruturalmente com JieLi/JL701N; “Microwear S11 Pro” é o modelo informado pelo usuário, não uma identificação comercial provada pelo conteúdo binário. O único campo explícito de versão do pacote encontrado é `version_id=W002` no `upgrade.json`; ver [upgrade_json.md](component-findings/upgrade_json.md).
