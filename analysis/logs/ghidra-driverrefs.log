@@ -1,0 +1,65 @@
+2026-10-22 23:55:38 INFO  (LoggingInitialization) Using log config file: jar:file:/home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-22 23:55:38 INFO  (LoggingInitialization) Using log file: /home/ubuntu/microwear_s11pro/work/logs/ghidra-driverrefs.log  
+2026-10-22 23:55:38 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-22 23:55:38 INFO  (Preferences) Loading user preferences: /home/ubuntu/.config/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-10-22 23:55:38 INFO  (ClassSearcher) Searching for classes...  
+2026-10-22 23:55:39 INFO  (ClassSearcher) Class search complete (895 ms)  
+2026-10-22 23:55:39 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-22 23:55:39 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-22 23:55:39 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-22 23:55:39 INFO  (UnixSystemTrustKeyStoreUtil) Loaded 121 trusted CA certificate(s) from /etc/ssl/certs/ca-certificates.crt  
+2026-10-22 23:55:39 INFO  (DefaultTrustManagerFactory) Loaded 121 trusted CA certificates from the OS trust store.  
+2026-10-22 23:55:39 INFO  (DefaultTrustManagerFactory) Loaded 118 trusted CA certificates from the Java default trust store.  
+2026-10-22 23:55:56 INFO  (LoggingInitialization) Using log config file: jar:file:/home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-22 23:55:56 INFO  (LoggingInitialization) Using log file: /home/ubuntu/microwear_s11pro/work/logs/ghidra-driverrefs.log  
+2026-10-22 23:55:56 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-22 23:55:56 INFO  (Preferences) Loading user preferences: /home/ubuntu/.config/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-10-22 23:55:56 INFO  (ClassSearcher) Searching for classes...  
+2026-10-22 23:55:57 INFO  (ClassSearcher) Class search complete (890 ms)  
+2026-10-22 23:55:57 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-22 23:55:57 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-22 23:55:57 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-22 23:55:57 INFO  (UnixSystemTrustKeyStoreUtil) Loaded 121 trusted CA certificate(s) from /etc/ssl/certs/ca-certificates.crt  
+2026-10-22 23:55:57 INFO  (DefaultTrustManagerFactory) Loaded 121 trusted CA certificates from the OS trust store.  
+2026-10-22 23:55:57 INFO  (DefaultTrustManagerFactory) Loaded 118 trusted CA certificates from the Java default trust store.  
+2026-10-22 23:55:58 INFO  (AnalyzeHeadless) Headless startup complete (1994 ms)  
+2026-10-22 23:55:58 INFO  (ClassSearcher) Class searcher loaded 60 extension points (19 false positives)  
+2026-10-22 23:55:58 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra-scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts  
+2026-10-22 23:55:58 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-22 23:55:58 INFO  (HeadlessAnalyzer) Opening existing project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-analysis  
+2026-10-22 23:55:58 INFO  (HeadlessProject) Opening project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-analysis  
+2026-10-22 23:55:58 DEBUG (SleighLanguage) Took 94ms (32ms inside lock) to initialize language /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JieLi/data/languages/pi32v2.slaspec -> /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JieLi/data/languages/pi32v2.sla  
+2026-10-22 23:55:59 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /00002020_app.bin  
+2026-10-22 23:55:59 INFO  (HeadlessAnalyzer) REPORT: Execute script: DriverRefs.java   
+2026-10-22 23:56:00 INFO  (HeadlessAnalyzer) SCRIPT: /home/ubuntu/microwear_s11pro/work/ghidra-scripts/DriverRefs.java  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> program=00002020_app.bin language=pi32v2:LE:32:default base=00000000  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> --- sh8601 @ cd618 ---  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> xref_count=0  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> --- gc9b71 @ cd61f ---  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> xref_count=0  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> --- bcs_touch @ 168bf6 ---  
+2026-10-22 23:56:00 INFO  (GhidraScript) DriverRefs.java> xref_count=0  
+2026-10-22 23:56:00 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /00002020_app.bin  

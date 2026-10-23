@@ -1,0 +1,885 @@
+2026-10-22 23:53:43 INFO  (LoggingInitialization) Using log config file: jar:file:/home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-22 23:53:43 INFO  (LoggingInitialization) Using log file: /home/ubuntu/microwear_s11pro/work/logs/ghidra-analysis.log  
+2026-10-22 23:53:43 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-22 23:53:43 INFO  (Preferences) Loading user preferences: /home/ubuntu/.config/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-10-22 23:53:43 INFO  (ClassSearcher) Searching for classes...  
+2026-10-22 23:53:44 INFO  (ClassSearcher) Class search complete (820 ms)  
+2026-10-22 23:53:44 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-22 23:53:44 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-22 23:53:44 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-22 23:53:44 INFO  (UnixSystemTrustKeyStoreUtil) Loaded 121 trusted CA certificate(s) from /etc/ssl/certs/ca-certificates.crt  
+2026-10-22 23:53:44 INFO  (DefaultTrustManagerFactory) Loaded 121 trusted CA certificates from the OS trust store.  
+2026-10-22 23:53:44 INFO  (DefaultTrustManagerFactory) Loaded 118 trusted CA certificates from the Java default trust store.  
+2026-10-22 23:53:45 DEBUG (SleighLanguage) Took 92ms (28ms inside lock) to initialize language /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JieLi/data/languages/pi32v2.slaspec -> /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JieLi/data/languages/pi32v2.sla  
+2026-10-22 23:53:45 INFO  (AnalyzeHeadless) Headless startup complete (2583 ms)  
+2026-10-22 23:53:45 INFO  (ClassSearcher) Class searcher loaded 96 extension points (47 false positives)  
+2026-10-22 23:53:45 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra-scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts  
+2026-10-22 23:53:45 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-22 23:53:45 INFO  (HeadlessAnalyzer) Creating project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-analysis  
+2026-10-22 23:53:45 INFO  (DefaultProject) Creating project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-analysis  
+2026-10-22 23:53:45 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-22 23:53:45 INFO  (HeadlessAnalyzer)      project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-analysis  
+2026-10-22 23:53:45 INFO  (HeadlessAnalyzer) IMPORTING: file:///home/ubuntu/microwear_s11pro/work/decoded/jlfs/00002020_app.bin  
+2026-10-22 23:53:45 INFO  (ProgramLoader) Successfully applied "-loader-baseAddr" to "Base Address" (old: "null", new: "0x0")  
+2026-10-22 23:53:45 INFO  (ProgramLoader) Using Loader: Raw Binary  
+2026-10-22 23:53:45 INFO  (ProgramLoader) Using Language/Compiler: pi32v2:LE:32:default:default  
+2026-10-22 23:53:45 INFO  (ProgramLoader) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64]  
+2026-10-22 23:53:46 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-22 23:53:46 INFO  (HeadlessAnalyzer) REPORT: Execute script: MarkEntry.java   
+2026-10-22 23:53:47 INFO  (HeadlessAnalyzer) SCRIPT: /home/ubuntu/microwear_s11pro/work/ghidra-scripts/MarkEntry.java  
+2026-10-22 23:53:47 INFO  (GhidraScript) MarkEntry.java> created provisional function=true  
+2026-10-22 23:53:47 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///home/ubuntu/microwear_s11pro/work/decoded/jlfs/00002020_app.bin  
+2026-10-22 23:53:47 WARN  (DecompileCallback) Decompiling 00000000, pcode error at 060887e4: Could not follow disassembly flow into non-existing memory at 060887e4  
+2026-10-22 23:53:47 DEBUG (FidAnalyzer) No FID Libraries apply for language pi32v2:LE:32:default  
+2026-10-22 23:53:47 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/ubuntu-ghidra/packed-db-cache  
+2026-10-22 23:53:47 DEBUG (PackedDatabaseCache) Caching packed database: /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-10-22 23:53:47 DEBUG (PackedDatabase) Unpacking database /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt -> /var/tmp/ubuntu-ghidra/packed-db-cache/pdb45794F31/db.1.gbf  
+2026-10-22 23:53:47 DEBUG (PackedDatabaseCache) Cache update completed: /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-10-22 23:53:48 DEBUG (SleighLanguage) Took 290ms (135ms inside lock) to initialize language /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/x86/data/languages/x86.slaspec -> /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/x86/data/languages/x86.sla  
+2026-10-22 23:53:48 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-22 23:53:48 DEBUG (InstructionError) Instruction conflict details at 001e3532
+  New Instruction: }  lw r0, [r0 + 0x0]
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lw r0,[r0 + 0x0]
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:49 DEBUG (InstructionError) Instruction conflict details at 0018efc0
+  New Instruction: }  mov r0, r5
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,r5
+     group(13,15)            == 0x7  
+2026-10-22 23:53:49 DEBUG (InstructionError) Instruction conflict details at 0018efc0
+  New Instruction: }  mov r0, r5
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,r5
+     group(13,15)            == 0x7  
+2026-10-22 23:53:49 WARN  (DecompileCallback) Decompiling 0018edd8, pcode error at 0018ef08: Unable to resolve constructor at 0018ef08  
+2026-10-22 23:53:50 ERROR (SleighInstructionPrototype) Pcode error at 0018bd44: Program does not contain referenced instruction: 0018bd48  
+2026-10-22 23:53:50 ERROR (SleighInstructionPrototype) Pcode error at 00004ba6: Program does not contain referenced instruction: 00004baa  
+2026-10-22 23:53:50 DEBUG (InstructionError) Instruction conflict details at 0018bf76
+  New Instruction: }  uxth r4, r6
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: uxth r4,r6
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:50 DEBUG (InstructionError) Instruction conflict details at 0018d762
+  New Instruction: }  lw r4, [r4 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lw r4,[r4 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:50 DEBUG (InstructionError) Instruction conflict details at 0019a59a
+  New Instruction: }  add r4, #0x18
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: add r4,#0x18
+     group(13,15)            == 0x7  
+2026-10-22 23:53:51 DEBUG (InstructionError) Instruction conflict details at 001d0ac0
+  New Instruction: }  jne r9, #0x0, 0x001d0ac6
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: jne r9,#0x0,0x001d0ac6
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:52 WARN  (DecompileCallback) Decompiling 000033dc, pcode error at 0000344a: Unable to resolve constructor at 0000344a  
+2026-10-22 23:53:52 WARN  (DecompileCallback) Decompiling 000033dc, pcode error at 0000344e: Unable to resolve constructor at 0000344e  
+2026-10-22 23:53:52 WARN  (DecompileCallback) Decompiling 000033dc, pcode error at 00003580: Unable to resolve constructor at 00003580  
+2026-10-22 23:53:52 WARN  (DecompileCallback) Decompiling 000033dc, pcode error at 000034d8: Unable to resolve constructor at 000034d8  
+2026-10-22 23:53:52 WARN  (DecompileCallback) Decompiling 0018e76a, pcode error at 0018e862: Unable to resolve constructor at 0018e862  
+2026-10-22 23:53:52 ERROR (SleighInstructionPrototype) Pcode error at 0018bd44: Program does not contain referenced instruction: 0018bd48  
+2026-10-22 23:53:52 ERROR (SleighInstructionPrototype) Pcode error at 0018bd44: Program does not contain referenced instruction: 0018bd48  
+2026-10-22 23:53:52 ERROR (SleighInstructionPrototype) Pcode error at 00004ba6: Program does not contain referenced instruction: 00004baa  
+2026-10-22 23:53:52 DEBUG (InstructionError) Instruction conflict details at 0000af76
+  New Instruction: }  mov r0, #0x1
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,#0x1
+     group(13,15)            == 0x7  
+2026-10-22 23:53:52 DEBUG (InstructionError) Instruction conflict details at 0000af76
+  New Instruction: }  mov r0, #0x1
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,#0x1
+     group(13,15)            == 0x7  
+2026-10-22 23:53:52 DEBUG (InstructionError) Instruction conflict details at 000071d8
+  New Instruction: }  pop {pc,r5,r4}
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r5,r4}
+     group(13,15)            == 0x7  
+2026-10-22 23:53:52 DEBUG (InstructionError) Instruction conflict details at 000071d8
+  New Instruction: }  pop {pc,r5,r4}
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r5,r4}
+     group(13,15)            == 0x7  
+2026-10-22 23:53:52 DEBUG (InstructionError) Instruction conflict details at 000071d8
+  New Instruction: }  pop {pc,r5,r4}
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r5,r4}
+     group(13,15)            == 0x7  
+2026-10-22 23:53:52 DEBUG (InstructionError) Instruction conflict details at 000071d8
+  New Instruction: }  pop {pc,r5,r4}
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r5,r4}
+     group(13,15)            == 0x7  
+2026-10-22 23:53:53 DEBUG (InstructionError) Instruction conflict details at 0000af04
+  New Instruction: }  sb r0, [r1 + 0x0]
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: sb r0,[r1 + 0x0]
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:54 ERROR (SleighInstructionPrototype) Pcode error at 001ad5fe: Program does not contain referenced instruction: 001ad602  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001adb42
+  New Instruction: }  sw r0, [sp]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: sw r0,[sp]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:54 ERROR (SleighInstructionPrototype) Pcode error at 001adb54: Program does not contain referenced instruction: 001adb56  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001c67e4
+  New Instruction: }  pop {pc,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001c67e4
+  New Instruction: }  pop {pc,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001cc426
+  New Instruction: }  call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001cc426
+  New Instruction: }  call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001cc426
+  New Instruction: }  call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:54 DEBUG (InstructionError) Instruction conflict details at 001cc426
+  New Instruction: }  call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: call 0x000056ba
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:55 DEBUG (InstructionError) Instruction conflict details at 001cc340
+  New Instruction: }  lw r2, [r2 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lw r2,[r2 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:55 WARN  (DecompileCallback) Decompiling 001addc6, pcode error at 001ae052: Unable to resolve constructor at 001ae052  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 001adf06
+  New Instruction: }  lb.s r0, [r2+#0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lb.s r0,[r2+#0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 001c6a98
+  New Instruction: }  lw r0, [r0 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lw r0,[r0 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 001c6a98
+  New Instruction: }  lw r0, [r0 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lw r0,[r0 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 001c6a98
+  New Instruction: }  lw r0, [r0 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: lw r0,[r0 + 0x0]
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 0000898a
+  New Instruction: }  movz r0, #0x35ef
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x35ef
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 0000898a
+  New Instruction: }  movz r0, #0x35ef
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x35ef
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 0000898a
+  New Instruction: }  movz r0, #0x35ef
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x35ef
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 00008e34
+  New Instruction: }  movz r0, #0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 00008e34
+  New Instruction: }  movz r0, #0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 00008e34
+  New Instruction: }  movz r0, #0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 00008e34
+  New Instruction: }  movz r0, #0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: movz r0,#0x3924
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 0000778c
+  New Instruction: }  pop {pc,r8,r7,r6,r5,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r8,r7,r6,r5,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 0000778c
+  New Instruction: }  pop {pc,r8,r7,r6,r5,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r8,r7,r6,r5,r4}
+     replen(17,23)           == 0x2
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7  
+2026-10-22 23:53:56 ERROR (SleighInstructionPrototype) Pcode error at 001adb54: Program does not contain referenced instruction: 001adb56  
+2026-10-22 23:53:56 ERROR (SleighInstructionPrototype) Pcode error at 001ad5fe: Program does not contain referenced instruction: 001ad602  
+2026-10-22 23:53:56 DEBUG (InstructionError) Instruction conflict details at 001a4574
+  New Instruction: }  je r1, 0x2, 0x001a460a
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: je r1,0x2,0x001a460a
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:57 DEBUG (InstructionError) Instruction conflict details at 00192582
+  New Instruction: }  pop pc
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop pc
+     group(13,15)            == 0x7  
+2026-10-22 23:53:58 WARN  (DecompileCallback) Decompiling 001a0c74, pcode error at 001a0ebc: Unable to resolve constructor at 001a0ebc  
+2026-10-22 23:53:58 WARN  (DecompileCallback) Decompiling 001a0c74, pcode error at 001a0f40: Unable to resolve constructor at 001a0f40  
+2026-10-22 23:53:58 WARN  (DecompileCallback) Decompiling 0003a66e, pcode error at 0003a6cc: Unable to resolve constructor at 0003a6cc  
+2026-10-22 23:53:59 WARN  (DecompileCallback) Decompiling 00044444, pcode error at 00044b94: Unable to resolve constructor at 00044b94  
+2026-10-22 23:53:59 WARN  (DecompileCallback) Decompiling 00044444, pcode error at 00044b50: Unable to resolve constructor at 00044b50  
+2026-10-22 23:53:59 WARN  (DecompileCallback) Decompiling 00044444, pcode error at 00044aec: Unable to resolve constructor at 00044aec  
+2026-10-22 23:53:59 WARN  (DecompileCallback) Decompiling 00044444, pcode error at 00044a8c: Unable to resolve constructor at 00044a8c  
+2026-10-22 23:53:59 WARN  (DecompileCallback) Decompiling 00044444, pcode error at 00044a3c: Unable to resolve constructor at 00044a3c  
+2026-10-22 23:53:59 DEBUG (InstructionError) Instruction conflict details at 000897fe
+  New Instruction: }  pop {pc,r7,r6,r5,r4}
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x0
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r7,r6,r5,r4}
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:59 DEBUG (InstructionError) Instruction conflict details at 000897fe
+  New Instruction: }  pop {pc,r7,r6,r5,r4}
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x0
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r7,r6,r5,r4}
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:53:59 DEBUG (InstructionError) Instruction conflict details at 000897fe
+  New Instruction: }  pop {pc,r7,r6,r5,r4}
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x0
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: pop {pc,r7,r6,r5,r4}
+     replen(17,23)           == 0x4
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:00 DEBUG (InstructionError) Instruction conflict details at 0002e7fc
+  New Instruction: }  mov r1, #0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r1,#0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:00 DEBUG (InstructionError) Instruction conflict details at 0002e68c
+  New Instruction: }  mov r1, #0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r1,#0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:02 WARN  (DecompileCallback) Decompiling 0001b1fa, pcode error at 0001c488: Unable to resolve constructor at 0001c488  
+2026-10-22 23:54:02 WARN  (DecompileCallback) Decompiling 0001b1fa, pcode error at 0001b568: Unable to resolve constructor at 0001b568  
+2026-10-22 23:54:02 WARN  (DecompileCallback) Decompiling 0001b1fa, pcode error at 0001bbc2: Unable to resolve constructor at 0001bbc2  
+2026-10-22 23:54:02 WARN  (DecompileCallback) Decompiling 0001b1fa, pcode error at 0001b266: Unable to resolve constructor at 0001b266  
+2026-10-22 23:54:02 DEBUG (InstructionError) Instruction conflict details at 00019e2e
+  New Instruction: call 0x000049e2
+     replen(17,23)           == 0x12
+     reploop(16,16)          == 0x1
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0
+  Existing Instruction: call 0x000049e2
+     replen(17,23)           == 0x12
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:02 DEBUG (InstructionError) Instruction conflict details at 00019e2e
+  New Instruction: call 0x000049e2
+     replen(17,23)           == 0x12
+     reploop(16,16)          == 0x1
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0
+  Existing Instruction: call 0x000049e2
+     replen(17,23)           == 0x12
+     reploop(16,16)          == 0x0
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:02 DEBUG (InstructionError) Instruction conflict details at 00013eb8
+  New Instruction: }  ldw r0, r10, #0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: ldw r0,r10,#0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:02 DEBUG (InstructionError) Instruction conflict details at 00013eb8
+  New Instruction: }  ldw r0, r10, #0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: ldw r0,r10,#0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:02 DEBUG (InstructionError) Instruction conflict details at 00013eb8
+  New Instruction: }  ldw r0, r10, #0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: ldw r0,r10,#0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:02 DEBUG (InstructionError) Instruction conflict details at 00013eb8
+  New Instruction: }  ldw r0, r10, #0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: ldw r0,r10,#0x28
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:03 WARN  (DecompileCallback) Decompiling 0001300c, pcode error at 00013194: Unable to resolve constructor at 00013194  
+2026-10-22 23:54:03 WARN  (DecompileCallback) Decompiling 0001300c, pcode error at 000130a2: Unable to resolve constructor at 000130a2  
+2026-10-22 23:54:03 DEBUG (InstructionError) Instruction conflict details at 001a9766
+  New Instruction: }  mov r0, r11
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,r11
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:03 DEBUG (InstructionError) Instruction conflict details at 001a9766
+  New Instruction: }  mov r0, r11
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,r11
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:03 DEBUG (InstructionError) Instruction conflict details at 001a9766
+  New Instruction: }  mov r0, r11
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     closebracket(01,01)     == 0x1
+     ifblock(00,00)          == 0x0
+  Existing Instruction: mov r0,r11
+     group(13,15)            == 0x7
+     elsebranch(05,06)       == 0x0
+     thenbranch(02,04)       == 0x0
+     ifblock(00,00)          == 0x0  
+2026-10-22 23:54:03 ERROR (SleighInstructionPrototype) Pcode error at 001a7924: Program does not contain referenced instruction: 001a7928  
+2026-10-22 23:54:03 ERROR (SleighInstructionPrototype) Pcode error at 001b2934: Program does not contain referenced instruction: 001b2938  
+2026-10-22 23:54:03 ERROR (SleighInstructionPrototype) Pcode error at 001a7924: Program does not contain referenced instruction: 001a7928  
+2026-10-22 23:54:04 ERROR (SleighInstructionPrototype) Pcode error at 001a7924: Program does not contain referenced instruction: 001a7928  
+2026-10-22 23:54:04 ERROR (SleighInstructionPrototype) Pcode error at 001adb54: Program does not contain referenced instruction: 001adb56  
+2026-10-22 23:54:04 ERROR (SleighInstructionPrototype) Pcode error at 001ad5fe: Program does not contain referenced instruction: 001ad602  
+2026-10-22 23:54:05 INFO  (FormatStringAnalyzer) No functions detected that make variadic function calls with format strings containing format specifiers  
+2026-10-22 23:54:05 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.720 secs
+    Apply Data Archives                        0.732 secs
+    Basic Constant Reference Analyzer          1.336 secs
+    Call Convention ID                         0.000 secs
+    Call-Fixup Installer                       0.016 secs
+    Create Address Tables                      0.082 secs
+    Create Address Tables - One Time           0.669 secs
+    Create Function                            0.280 secs
+    Data Reference                             0.352 secs
+    Decompiler Switch Analysis                 9.056 secs
+    Demangler GNU                              0.010 secs
+    Disassemble Entry Points                   0.002 secs
+    Embedded Media                             0.046 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.022 secs
+    Non-Returning Functions - Discovered       1.238 secs
+    Reference                                  0.550 secs
+    Shared Return Calls                        0.090 secs
+    Source Language Support                    0.002 secs
+    Stack                                      0.596 secs
+    Subroutine References                      2.106 secs
+    Subroutine References - One Time           0.000 secs
+    Variadic Function Signature Override       0.095 secs
+-----------------------------------------------------
+     Total Time   18 secs
+-----------------------------------------------------
+  
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///home/ubuntu/microwear_s11pro/work/decoded/jlfs/00002020_app.bin  
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) REPORT: Execute script: AnalysisSummary.java   
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) SCRIPT: /home/ubuntu/microwear_s11pro/work/ghidra-scripts/AnalysisSummary.java  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> program=00002020_app.bin  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> language=pi32v2:LE:32:default  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> imageBase=00000000  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> functionCount=1186  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> instructionCount=40795  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000000 entry_provisional_offset_0 body_bytes=142  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000162 FUN_00000162 body_bytes=166  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000246 FUN_00000246 body_bytes=52  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000027a FUN_0000027a body_bytes=60  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000350 FUN_00000350 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000366 FUN_00000366 body_bytes=20  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000037a FUN_0000037a body_bytes=38  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000003a0 FUN_000003a0 body_bytes=226  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000004a6 FUN_000004a6 body_bytes=36  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000506 FUN_00000506 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000510 FUN_00000510 body_bytes=64  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000670 FUN_00000670 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000007b0 FUN_000007b0 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000007ba FUN_000007ba body_bytes=54  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000007f0 FUN_000007f0 body_bytes=20  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000804 FUN_00000804 body_bytes=130  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000886 FUN_00000886 body_bytes=20  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000089a FUN_0000089a body_bytes=208  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000096a FUN_0000096a body_bytes=86  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000009c0 FUN_000009c0 body_bytes=90  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000a1a FUN_00000a1a body_bytes=262  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000b7a FUN_00000b7a body_bytes=4  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000b7e FUN_00000b7e body_bytes=22  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000b94 FUN_00000b94 body_bytes=136  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000c2e FUN_00000c2e body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000c38 FUN_00000c38 body_bytes=42  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000c62 FUN_00000c62 body_bytes=110  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000f98 FUN_00000f98 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00000fa2 FUN_00000fa2 body_bytes=56  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001168 FUN_00001168 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001170 FUN_00001170 body_bytes=18  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000011fc FUN_000011fc body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001206 FUN_00001206 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001218 FUN_00001218 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000013b6 FUN_000013b6 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000143e FUN_0000143e body_bytes=82  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001498 FUN_00001498 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000016b2 FUN_000016b2 body_bytes=30  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000016d0 FUN_000016d0 body_bytes=56  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000173e FUN_0000173e body_bytes=66  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001780 FUN_00001780 body_bytes=146  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001aaa FUN_00001aaa body_bytes=80  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001c9e FUN_00001c9e body_bytes=20  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001f20 FUN_00001f20 body_bytes=46  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001f4e FUN_00001f4e body_bytes=16  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00001f5e FUN_00001f5e body_bytes=30  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000213a FUN_0000213a body_bytes=78  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00002430 FUN_00002430 body_bytes=130  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000252c FUN_0000252c body_bytes=296  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00002d70 FUN_00002d70 body_bytes=40  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00002d98 FUN_00002d98 body_bytes=58  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00002dd2 FUN_00002dd2 body_bytes=104  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00002e74 FUN_00002e74 body_bytes=32  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003072 FUN_00003072 body_bytes=78  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000030c0 FUN_000030c0 body_bytes=16  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000030d0 FUN_000030d0 body_bytes=56  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003108 FUN_00003108 body_bytes=134  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000318e FUN_0000318e body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003198 FUN_00003198 body_bytes=76  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000031e4 FUN_000031e4 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000031ee FUN_000031ee body_bytes=12  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000031fa FUN_000031fa body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003204 FUN_00003204 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000320c FUN_0000320c body_bytes=18  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000321e FUN_0000321e body_bytes=18  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003230 FUN_00003230 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000323a FUN_0000323a body_bytes=14  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003248 FUN_00003248 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003250 FUN_00003250 body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000325a FUN_0000325a body_bytes=260  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000033dc FUN_000033dc body_bytes=86  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003492 FUN_00003492 body_bytes=88  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000034ea FUN_000034ea body_bytes=20  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000034fe FUN_000034fe body_bytes=22  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003514 FUN_00003514 body_bytes=16  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003524 FUN_00003524 body_bytes=72  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000356c FUN_0000356c body_bytes=80  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000035bc FUN_000035bc body_bytes=248  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000036b4 FUN_000036b4 body_bytes=130  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003736 FUN_00003736 body_bytes=138  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000037c0 FUN_000037c0 body_bytes=28  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000037e2 FUN_000037e2 body_bytes=48  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003812 FUN_00003812 body_bytes=22  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003828 FUN_00003828 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 0000383e FUN_0000383e body_bytes=20  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003852 FUN_00003852 body_bytes=134  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 000038d8 FUN_000038d8 body_bytes=128  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003958 FUN_00003958 body_bytes=240  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003a48 FUN_00003a48 body_bytes=94  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003aa6 FUN_00003aa6 body_bytes=34  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003ac8 FUN_00003ac8 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003ad0 FUN_00003ad0 body_bytes=8  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003ad8 FUN_00003ad8 body_bytes=18  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003aea FUN_00003aea body_bytes=10  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003af4 FUN_00003af4 body_bytes=42  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003b1e FUN_00003b1e body_bytes=130  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003ba0 FUN_00003ba0 body_bytes=58  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003bda FUN_00003bda body_bytes=38  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003c00 FUN_00003c00 body_bytes=354  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> function 00003d62 FUN_00003d62 body_bytes=102  
+2026-10-22 23:54:05 INFO  (GhidraScript) AnalysisSummary.java> functionSampleCount=100  
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///home/ubuntu/microwear_s11pro/work/decoded/jlfs/00002020_app.bin  
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///home/ubuntu/microwear_s11pro/work/decoded/jlfs/00002020_app.bin  
+2026-10-22 23:54:05 INFO  (LocalFileSystem) /00002020_app.bin: file created (ubuntu)  
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /00002020_app.bin (S11Pro-analysis:/00002020_app.bin)  
+2026-10-22 23:54:05 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

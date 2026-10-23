@@ -1,0 +1,237 @@
+{
+  "input": "original/176103986767848.ufw",
+  "input_sha256": "0ad4460ba411122f934a292a5ea78294158a4e21af9dabbe72f920324f623b43",
+  "input_size": 2557568,
+  "crc16_parameters": {
+    "name": "JieLi jl_crc16 / CRC-16-XMODEM-style",
+    "polynomial": "0x1021",
+    "initial": "0x0000",
+    "refin": false,
+    "refout": false,
+    "xorout": "0x0000",
+    "stored_field_endian": "little-endian"
+  },
+  "enc_parameters": {
+    "key": "0xffff",
+    "stream": "XOR LFSR, state reset on each call"
+  },
+  "ufw_header": {
+    "declared_size": 2557568,
+    "entry_count": 9,
+    "stored_crc16_le": "0x5394",
+    "calculated_crc16": "0x5394",
+    "range": "decrypted bytes [0x02,0x40)",
+    "matches": true
+  },
+  "ufw_entry_list": {
+    "stored_crc16_le": "0xd0b9",
+    "calculated_crc16": "0xd0b9",
+    "range": "raw encrypted entry headers [0x40,0x310)",
+    "matches": true
+  },
+  "ufw_entries_raw_scope": [
+    {
+      "slot": 0,
+      "type": 0,
+      "index": 0,
+      "name": "flash.bin",
+      "data_offset": 1024,
+      "size": 2428928,
+      "stored_data_crc16_le": "0xd655",
+      "crc16_raw_payload": "0xd655",
+      "raw_payload_crc_matches": true,
+      "raw_sha256": "cc524f4a562c80ef91165f74dc384a9e28c289b9f4b9da4b32695ca00bd86eed",
+      "crc_scope_status": "raw_match"
+    },
+    {
+      "slot": 1,
+      "type": 2,
+      "index": 1,
+      "name": "info.log",
+      "data_offset": 2429952,
+      "size": 0,
+      "stored_data_crc16_le": "0x0000",
+      "crc16_raw_payload": "0x0000",
+      "raw_payload_crc_matches": true,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc_scope_status": "raw_match"
+    },
+    {
+      "slot": 2,
+      "type": 55,
+      "index": 2,
+      "name": "uboot.version",
+      "data_offset": 2429952,
+      "size": 32,
+      "stored_data_crc16_le": "0x4ec3",
+      "crc16_raw_payload": "0x2be2",
+      "raw_payload_crc_matches": false,
+      "raw_sha256": "78702e1e4104e63ad0480bbfb750b323b2d711bcf660a9b8fe1ed4f06a70d04f",
+      "crc_scope_status": "raw_mismatch_scope_unresolved"
+    },
+    {
+      "slot": 3,
+      "type": 52,
+      "index": 3,
+      "name": "isd_config.ini",
+      "data_offset": 2429984,
+      "size": 1273,
+      "stored_data_crc16_le": "0xab74",
+      "crc16_raw_payload": "0x80f1",
+      "raw_payload_crc_matches": false,
+      "raw_sha256": "1cea83834174edf8ccb4a7b3f26ffe5c17c61b3bcb2e9642c922908e1ee08862",
+      "crc_scope_status": "raw_mismatch_scope_unresolved"
+    },
+    {
+      "slot": 4,
+      "type": 56,
+      "index": 4,
+      "name": "v_ota.bin",
+      "data_offset": 2431264,
+      "size": 64,
+      "stored_data_crc16_le": "0x6285",
+      "crc16_raw_payload": "0x6056",
+      "raw_payload_crc_matches": false,
+      "raw_sha256": "0f1ac1ad30da940ea2186fcb30251a218377e57eb3c038f3c4e8bce615a80f33",
+      "crc_scope_status": "raw_mismatch_scope_unresolved"
+    },
+    {
+      "slot": 5,
+      "type": 100,
+      "index": 5,
+      "name": "ota.bin",
+      "data_offset": 2431328,
+      "size": 125966,
+      "stored_data_crc16_le": "0x0e22",
+      "crc16_raw_payload": "0x0e22",
+      "raw_payload_crc_matches": true,
+      "raw_sha256": "97695ea71986c811e028258643b7d2a0e276776947856ddf4a9cb56f6e4603cc",
+      "crc_scope_status": "raw_match"
+    },
+    {
+      "slot": 6,
+      "type": 251,
+      "index": 6,
+      "name": "farg.cfg",
+      "data_offset": 2557312,
+      "size": 5,
+      "stored_data_crc16_le": "0x8312",
+      "crc16_raw_payload": "0xf103",
+      "raw_payload_crc_matches": false,
+      "raw_sha256": "08491ba40a2044339a42450e38cc46df2bad02f9f48c7efb7ff48e8e8d8e4b80",
+      "crc_scope_status": "raw_mismatch_scope_unresolved"
+    },
+    {
+      "slot": 7,
+      "type": 161,
+      "index": 7,
+      "name": "blimit.bin",
+      "data_offset": 2557344,
+      "size": 144,
+      "stored_data_crc16_le": "0x5a48",
+      "crc16_raw_payload": "0x5011",
+      "raw_payload_crc_matches": false,
+      "raw_sha256": "fee5363a438fdc95d0a5f0b56053bed1ec980eebb2d9c3db345201fa504d596e",
+      "crc_scope_status": "raw_mismatch_scope_unresolved"
+    },
+    {
+      "slot": 8,
+      "type": 255,
+      "index": 8,
+      "name": "tail.bin",
+      "data_offset": 2557504,
+      "size": 64,
+      "stored_data_crc16_le": "0x00c2",
+      "crc16_raw_payload": "0x00c2",
+      "raw_payload_crc_matches": true,
+      "raw_sha256": "f64fea329a5112f489a8d99d201b4973a8b2ab3cc2e926eb4823ae11cec9231d",
+      "crc_scope_status": "raw_match"
+    }
+  ],
+  "flash_header": {
+    "file_offset": 1024,
+    "raw_hex": "df2abf1d302e3031f0315c67c7adff684a4c3730314effffffffffffffffffff",
+    "fully_decrypted_hex_for_crc": "20f520022f104cc900f0ff000910a4ff45520b48e0cdd8b163e6ecd9b367cf9f",
+    "stored_crc16_le": "0xf520",
+    "calculated_crc16_before_vid_pid_restore": "0xf520",
+    "crc_range": "fully decrypted header bytes [0x02,0x20), before restoring visible VID/PID",
+    "matches_before_restore": true,
+    "diagnostic_crc_after_vid_pid_restore": "0x400c",
+    "note": "Restored VID/PID bytes are a display/parsing view and are not the CRC input."
+  },
+  "jlfs_top_entries": [
+    {
+      "header_offset": 32,
+      "name": "uboot.boot",
+      "flags": 64,
+      "index": 0,
+      "stored_header_crc16_le": "0x807f",
+      "calculated_header_crc16": "0x807f",
+      "header_crc_matches": true,
+      "data_offset": 160,
+      "size": 5551,
+      "stored_data_crc16_le": "0xdc88"
+    },
+    {
+      "header_offset": 64,
+      "name": "isd_config.ini",
+      "flags": 2,
+      "index": 0,
+      "stored_header_crc16_le": "0x003f",
+      "calculated_header_crc16": "0x003f",
+      "header_crc_matches": true,
+      "data_offset": 5711,
+      "size": 127,
+      "stored_data_crc16_le": "0x0692"
+    },
+    {
+      "header_offset": 96,
+      "name": "app_dir_head",
+      "flags": 129,
+      "index": 0,
+      "stored_header_crc16_le": "0xf801",
+      "calculated_header_crc16": "0xf801",
+      "header_crc_matches": true,
+      "data_offset": 8192,
+      "size": 4294967295,
+      "stored_data_crc16_le": "0xffff"
+    },
+    {
+      "header_offset": 128,
+      "name": "key_mac",
+      "flags": 18,
+      "index": 65535,
+      "stored_header_crc16_le": "0x28c9",
+      "calculated_header_crc16": "0x28c9",
+      "header_crc_matches": true,
+      "data_offset": 16773120,
+      "size": 4096,
+      "stored_data_crc16_le": "0xffff"
+    }
+  ],
+  "uboot_bankcb": {
+    "stored_jlfs_data_crc16_le": "0xdc88",
+    "raw_payload_crc16": "0xaff9",
+    "raw_payload_crc_matches": false,
+    "flags": 64,
+    "compression_flag_bit6_set": true,
+    "bankcb": {
+      "bank_header_crc_matches": true,
+      "bank_header_crc16_le": "0xf4c0",
+      "bank_header_crc16_calculated": "0xf4c0",
+      "bank_id": 1,
+      "bank_size": 5535,
+      "bank_load": "0x160000",
+      "bank_offset": 16,
+      "bank_crc16_le": "0x97e7",
+      "bank_range_within_payload": true,
+      "bank_body_crc16_calculated": "0x97e7",
+      "bank_body_crc_matches": true,
+      "whole_payload_crc16_after_bankcb": "0xdc88",
+      "whole_payload_crc_matches_jlfs_entry": true,
+      "descrambled_sha256": "cdec2ee950ac6679fbbb136139faef96f08f0efd9182d81735de8f45c946f21f",
+      "decompression_performed": false
+    },
+    "note": "Bankcb descrambling and CRC checks only; no decompression or codec identification performed."
+  }
+}

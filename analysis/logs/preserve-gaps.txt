@@ -1,0 +1,255 @@
+{
+  "table_end": "0x310",
+  "regions": [
+    {
+      "file": "work/raw_regions/metadata/outer_header_table.raw.bin",
+      "kind": "scrambled outer header/table copied raw",
+      "offset": 0,
+      "offset_hex": "0x0",
+      "end_exclusive": 784,
+      "end_exclusive_hex": "0x310",
+      "size": 784,
+      "sha256": "6b7857bfe4b617e57af9abe448c92200a6788b3d9aab39e39e3db87e24e72091"
+    },
+    {
+      "file": "work/raw_regions/metadata/outer_header.decoded.bin",
+      "kind": "outer header decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 0,
+      "offset_hex": "0x0",
+      "end_exclusive": 64,
+      "end_exclusive_hex": "0x40",
+      "size": 64,
+      "sha256": "142f988c90f2d84fc0f746863451af759459fbed0e979b27e8d064b3eeb24b38"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_00.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 64,
+      "offset_hex": "0x40",
+      "end_exclusive": 144,
+      "end_exclusive_hex": "0x90",
+      "size": 80,
+      "sha256": "540b5de7a1364cb7693ce6dfd6dfcceede279968c459c33effc23a81eba86742"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_00.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 64,
+      "offset_hex": "0x40",
+      "end_exclusive": 144,
+      "end_exclusive_hex": "0x90",
+      "size": 80,
+      "sha256": "99661463c3cb1745e403868e48854c1ce7d2fa5d8ffdeb8f08ad92c4ad7ef7b5"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_01.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 144,
+      "offset_hex": "0x90",
+      "end_exclusive": 224,
+      "end_exclusive_hex": "0xe0",
+      "size": 80,
+      "sha256": "7d5bf218f3e76965b9a353d4b03792de8fe349fa030bd6bc358046ca1d322e7d"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_01.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 144,
+      "offset_hex": "0x90",
+      "end_exclusive": 224,
+      "end_exclusive_hex": "0xe0",
+      "size": 80,
+      "sha256": "1fc19d6a292ac45e27976a1cab452e1fc5b5e85913e2de61938918bf9755cfee"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_02.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 224,
+      "offset_hex": "0xe0",
+      "end_exclusive": 304,
+      "end_exclusive_hex": "0x130",
+      "size": 80,
+      "sha256": "fffe86a4f7fd93ed2f8b295cd65fd7c551017cb0bb816e23d689174257bfdf03"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_02.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 224,
+      "offset_hex": "0xe0",
+      "end_exclusive": 304,
+      "end_exclusive_hex": "0x130",
+      "size": 80,
+      "sha256": "bfd0392aa34eb025f97ef8815126eb2f625d816ecd8715db34f7d2c75b8edf53"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_03.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 304,
+      "offset_hex": "0x130",
+      "end_exclusive": 384,
+      "end_exclusive_hex": "0x180",
+      "size": 80,
+      "sha256": "162b22636ee579fec491d04de27d6fe2208d5005c08ea692a5ace88a43fe27c3"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_03.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 304,
+      "offset_hex": "0x130",
+      "end_exclusive": 384,
+      "end_exclusive_hex": "0x180",
+      "size": 80,
+      "sha256": "b9daea9caa700fbfe75412f8b73a7023e6fa3c0aa8d78c709bcdcfd2a54ee343"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_04.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 384,
+      "offset_hex": "0x180",
+      "end_exclusive": 464,
+      "end_exclusive_hex": "0x1d0",
+      "size": 80,
+      "sha256": "0d3a33501a35e2ee3bfb40ca6aecadd5cf314949834897d96f5738e1840b2b6b"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_04.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 384,
+      "offset_hex": "0x180",
+      "end_exclusive": 464,
+      "end_exclusive_hex": "0x1d0",
+      "size": 80,
+      "sha256": "fce2891884c1233b5b44c750715996c7c5e68ee62b793efe7b5fd1ec764b1462"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_05.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 464,
+      "offset_hex": "0x1d0",
+      "end_exclusive": 544,
+      "end_exclusive_hex": "0x220",
+      "size": 80,
+      "sha256": "11f6cdabf55a5f5c85345edf54f4232296098d26372c319ad8905b8c0cd517ed"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_05.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 464,
+      "offset_hex": "0x1d0",
+      "end_exclusive": 544,
+      "end_exclusive_hex": "0x220",
+      "size": 80,
+      "sha256": "89095fce8ec27c6464160207c7826c05a249b718d2fed733e0e22771f89878bb"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_06.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 544,
+      "offset_hex": "0x220",
+      "end_exclusive": 624,
+      "end_exclusive_hex": "0x270",
+      "size": 80,
+      "sha256": "ad85aeb768bed86d4d21ebf7ccbb0e8be4d2176c928c94e67432687767995772"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_06.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 544,
+      "offset_hex": "0x220",
+      "end_exclusive": 624,
+      "end_exclusive_hex": "0x270",
+      "size": 80,
+      "sha256": "85192b2cdf912bd768d9a5c9d2bdfb5b82df9d70e4b3df44b53e970693f50d0f"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_07.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 624,
+      "offset_hex": "0x270",
+      "end_exclusive": 704,
+      "end_exclusive_hex": "0x2c0",
+      "size": 80,
+      "sha256": "ece3400837da88533ea1cffaa31ebc8872788b893cc824e10b6dd758a20d386c"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_07.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 624,
+      "offset_hex": "0x270",
+      "end_exclusive": 704,
+      "end_exclusive_hex": "0x2c0",
+      "size": 80,
+      "sha256": "5d278ade61ce075237bd50b3708a4ba1b56300dbb20bfed22d4bf1cdd2f4f38b"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_08.raw.bin",
+      "kind": "scrambled UFW entry record copied raw",
+      "offset": 704,
+      "offset_hex": "0x2c0",
+      "end_exclusive": 784,
+      "end_exclusive_hex": "0x310",
+      "size": 80,
+      "sha256": "1aa26dbf4e9b17e7a404eb482270036f4b8d18b9adf8581d28998e1a2b43ef6e"
+    },
+    {
+      "file": "work/raw_regions/metadata/entry_08.decoded.bin",
+      "kind": "UFW entry record decoded in-memory by parse_outer jl_enc_cipher",
+      "offset": 704,
+      "offset_hex": "0x2c0",
+      "end_exclusive": 784,
+      "end_exclusive_hex": "0x310",
+      "size": 80,
+      "sha256": "7e528a058241c4c5571524b31fd9374e491a0db3277dc4f994b1b6e0e306062b"
+    },
+    {
+      "file": "work/raw_regions/gaps/gap_00000310_00000400.bin",
+      "kind": "unassigned bytes between outer metadata/payloads",
+      "offset": 784,
+      "offset_hex": "0x310",
+      "end_exclusive": 1024,
+      "end_exclusive_hex": "0x400",
+      "size": 240,
+      "sha256": "d6c49417b1ca0a6714dcde2b40010cb7496d05df7f8c8b1b9814097e9d62c8e1"
+    },
+    {
+      "file": "work/raw_regions/gaps/gap_00251919_00251920.bin",
+      "kind": "unassigned bytes between outer metadata/payloads",
+      "offset": 2431257,
+      "offset_hex": "0x251919",
+      "end_exclusive": 2431264,
+      "end_exclusive_hex": "0x251920",
+      "size": 7,
+      "sha256": "cc6875e526b452dfd917ca31016ac5c38495df730973b5caefc964437d056873"
+    },
+    {
+      "file": "work/raw_regions/gaps/gap_0027056e_00270580.bin",
+      "kind": "unassigned bytes between outer metadata/payloads",
+      "offset": 2557294,
+      "offset_hex": "0x27056e",
+      "end_exclusive": 2557312,
+      "end_exclusive_hex": "0x270580",
+      "size": 18,
+      "sha256": "6acf95f515743e1c0485d811685cbf247857ba14c40318f2142915fe89a666f6"
+    },
+    {
+      "file": "work/raw_regions/gaps/gap_00270585_002705a0.bin",
+      "kind": "unassigned bytes between outer metadata/payloads",
+      "offset": 2557317,
+      "offset_hex": "0x270585",
+      "end_exclusive": 2557344,
+      "end_exclusive_hex": "0x2705a0",
+      "size": 27,
+      "sha256": "0f0c009bfb9cf6058ddeaeb930d728bf5c4d6d20583f59523c0ddd3e42fd1d97"
+    },
+    {
+      "file": "work/raw_regions/gaps/gap_00270630_00270640.bin",
+      "kind": "unassigned bytes between outer metadata/payloads",
+      "offset": 2557488,
+      "offset_hex": "0x270630",
+      "end_exclusive": 2557504,
+      "end_exclusive_hex": "0x270640",
+      "size": 16,
+      "sha256": "abfbfc4acba69e682a5a41bb34840b51e445cc1b9ecccd527208fc8132c1ec4c"
+    }
+  ]
+}

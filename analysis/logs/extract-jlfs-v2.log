@@ -1,0 +1,56 @@
+flash header {
+  "offset": 0,
+  "size": 32,
+  "raw_hex": "df2abf1d302e3031f0315c67c7adff684a4c3730314effffffffffffffffffff",
+  "decrypted_crc_input_hex": "20f520022f104cc900f0ff000910a4ff45520b48e0cdd8b163e6ecd9b367cf9f",
+  "decoded_candidate_hex": "20f52002302e303100f0ff000910a4ff4a4c3730314effffffffffffffffffff",
+  "header_crc16": 62752,
+  "header_crc16_calculated": 62752,
+  "header_crc_ok": true,
+  "header_crc_range": "decrypted bytes [0x02,0x20) before restoring visible VID/PID",
+  "burner_size": 544,
+  "vid": "0.01",
+  "flash_size_field": 16773120,
+  "fs_version": 9,
+  "block_align_256B_units": 16,
+  "reserved": 164,
+  "special_options": 255,
+  "product_id": "JL701N"
+}
+chipkey 0x7dc2 sfc_end 0x2500ca
+JLFS top uboot.boot hdr=0x20 data=0xa0 size=0x15af hdr_crc True within True data_crc_matches_saved_bytes False file work/decoded/jlfs/00000020_uboot.boot
+JLFS top isd_config.ini hdr=0x40 data=0x164f size=0x7f hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00000040_isd_config.ini
+JLFS top app_dir_head hdr=0x60 data=0x2000 size=0xffffffff hdr_crc True within False data_crc_matches_saved_bytes None file None
+JLFS top key_mac hdr=0x80 data=0xfff000 size=0x1000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+app area / SFC root app_area_head hdr=0x2000 data=0x2020 size=0x20f41b hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00002000_app_area_head.bin
+app area / SFC root app.bin hdr=0x2020 data=0x2120 size=0x20ef74 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00002020_app.bin
+app area / SFC root cfg_tool.bin hdr=0x2040 data=0x211094 size=0x3a7 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00002040_cfg_tool.bin
+app area / SFC root VM hdr=0x2060 data=0x253000 size=0xbe000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+app area / SFC root PRCT hdr=0x2080 data=0x2000 size=0x251000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+app area / SFC root BTIF hdr=0x20a0 data=0x311000 size=0x1000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+app area / SFC root FATFSI hdr=0x20c0 data=0x312000 size=0x20000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+app area / SFC root EXT_RESERVED hdr=0x21143b data=0x21145b size=0x40 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021143b_EXT_RESERVED.bin
+   BCSUI hdr=0x21145b data=0x64143b size=0xb90000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+   EXIF hdr=0x21147b data=0x11d143b size=0x1000 hdr_crc True within False data_crc_matches_saved_bytes None file None
+app area / SFC root tone hdr=0x21149b data=0x2114bb size=0x315a0 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021149b_tone.bin
+   index.idx hdr=0x2114bb data=0x21165b size=0xae hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/002114bb_index.idx
+   drain.wtg hdr=0x2114db data=0x21170b size=0x15e0 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/002114db_drain.wtg
+   sos.wtg hdr=0x2114fb data=0x212ceb size=0x834 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/002114fb_sos.wtg
+   msg0.mp3 hdr=0x21151b data=0x21352b size=0xefb hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021151b_msg0.mp3
+   msg1.mp3 hdr=0x21153b data=0x21442b size=0x4fb5 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021153b_msg1.mp3
+   msg2.mp3 hdr=0x21155b data=0x2193eb size=0x1673 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021155b_msg2.mp3
+   msg3.mp3 hdr=0x21157b data=0x21aa6b size=0x50a0 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021157b_msg3.mp3
+   call0.mp3 hdr=0x21159b data=0x21fb0b size=0x3e10 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021159b_call0.mp3
+   call1.mp3 hdr=0x2115bb data=0x22391b size=0x7324 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/002115bb_call1.mp3
+   call2.mp3 hdr=0x2115db data=0x22ac4b size=0xc22b hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/002115db_call2.mp3
+   call3.mp3 hdr=0x2115fb data=0x236e7b size=0x2537 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/002115fb_call3.mp3
+   asrhello.mp3 hdr=0x21161b data=0x2393bb size=0x5784 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021161b_asrhello.mp3
+   asrbye.mp3 hdr=0x21163b data=0x23eb4b size=0x3f07 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0021163b_asrbye.mp3
+app area / SFC root ui_upgrade hdr=0x242a5b data=0x242a7b size=0x8976 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00242a5b_ui_upgrade.bin
+   upgrade.json hdr=0x242a7b data=0x242afb size=0x35 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00242a7b_upgrade.json
+   upgrade.res hdr=0x242a9b data=0x242b30 size=0x7c63 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00242a9b_upgrade.res
+   upgrade.str hdr=0x242abb data=0x24a793 size=0xa54 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00242abb_upgrade.str
+   upgrade.sty hdr=0x242adb data=0x24b1e7 size=0x20a hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/00242adb_upgrade.sty
+app area / SFC root p11_code.bin hdr=0x24b3f1 data=0x24b411 size=0x3b08 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0024b3f1_p11_code.bin
+app area / SFC root config.dat hdr=0x24ef19 data=0x24ef39 size=0x180 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0024ef19_config.dat
+app area / SFC root eq_cfg_hw.bin hdr=0x24f0b9 data=0x24f0d9 size=0xff1 hdr_crc True within True data_crc_matches_saved_bytes True file work/decoded/jlfs/0024f0b9_eq_cfg_hw.bin

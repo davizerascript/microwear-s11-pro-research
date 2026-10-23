@@ -1,0 +1,10 @@
+Wrote /home/ubuntu/microwear_s11pro/INVENTARIO_COMPLETO.json and /home/ubuntu/microwear_s11pro/INVENTARIO_COMPLETO.csv (9 entries)
+00 flash.bin        off=     0x400 size= 2428928 H=7.998 crc-match=True sha256=cc524f4a562c80ef91165f74dc384a9e28c289b9f4b9da4b32695ca00bd86eed
+01 info.log         off=  0x251400 size=       0 H=0.000 crc-match=True sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+02 uboot.version    off=  0x251400 size=      32 H=4.875 crc-match=False sha256=78702e1e4104e63ad0480bbfb750b323b2d711bcf660a9b8fe1ed4f06a70d04f
+03 isd_config.ini   off=  0x251420 size=    1273 H=7.801 crc-match=False sha256=1cea83834174edf8ccb4a7b3f26ffe5c17c61b3bcb2e9642c922908e1ee08862
+04 v_ota.bin        off=  0x251920 size=      64 H=5.844 crc-match=False sha256=0f1ac1ad30da940ea2186fcb30251a218377e57eb3c038f3c4e8bce615a80f33
+05 ota.bin          off=  0x251960 size=  125966 H=7.155 crc-match=True sha256=97695ea71986c811e028258643b7d2a0e276776947856ddf4a9cb56f6e4603cc
+06 farg.cfg         off=  0x270580 size=       5 H=2.322 crc-match=False sha256=08491ba40a2044339a42450e38cc46df2bad02f9f48c7efb7ff48e8e8d8e4b80
+07 blimit.bin       off=  0x2705a0 size=     144 H=6.534 crc-match=False sha256=fee5363a438fdc95d0a5f0b56053bed1ec980eebb2d9c3db345201fa504d596e
+08 tail.bin         off=  0x270640 size=      64 H=4.571 crc-match=True sha256=f64fea329a5112f489a8d99d201b4973a8b2ab3cc2e926eb4823ae11cec9231d

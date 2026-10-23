@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/microwear_s11pro/work/jl-misctools/firmware/fwunpack_newfw.py", line 1, in <module>
+    from jltech.crc import jl_crc16
+  File "/home/ubuntu/microwear_s11pro/work/jl-misctools/firmware/jltech/crc.py", line 8, in <module>
+    import crcmod
+ModuleNotFoundError: No module named 'crcmod'

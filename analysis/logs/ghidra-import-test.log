@@ -1,0 +1,56 @@
+2026-10-22 23:48:33 INFO  (LoggingInitialization) Using log config file: jar:file:/home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-22 23:48:33 INFO  (LoggingInitialization) Using log file: /home/ubuntu/microwear_s11pro/work/logs/ghidra-import-test.log  
+2026-10-22 23:48:33 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-22 23:48:33 INFO  (Preferences) Loading user preferences: /home/ubuntu/.config/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-10-22 23:48:33 INFO  (ClassSearcher) Searching for classes...  
+2026-10-22 23:48:34 INFO  (ClassSearcher) Class search complete (901 ms)  
+2026-10-22 23:48:34 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-22 23:48:34 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-22 23:48:34 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-22 23:48:34 INFO  (UnixSystemTrustKeyStoreUtil) Loaded 121 trusted CA certificate(s) from /etc/ssl/certs/ca-certificates.crt  
+2026-10-22 23:48:34 INFO  (DefaultTrustManagerFactory) Loaded 121 trusted CA certificates from the OS trust store.  
+2026-10-22 23:48:34 INFO  (DefaultTrustManagerFactory) Loaded 118 trusted CA certificates from the Java default trust store.  
+2026-10-22 23:48:34 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/tmp/ubuntu-ghidra/fscache2  
+2026-10-22 23:48:34 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2026-10-22 23:48:35 DEBUG (SleighLanguage) Took 95ms (30ms inside lock) to initialize language /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JieLi/data/languages/pi32v2.slaspec -> /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JieLi/data/languages/pi32v2.sla  
+2026-10-22 23:48:35 INFO  (AnalyzeHeadless) Headless startup complete (2709 ms)  
+2026-10-22 23:48:35 INFO  (ClassSearcher) Class searcher loaded 96 extension points (47 false positives)  
+2026-10-22 23:48:35 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /home/ubuntu/microwear_s11pro/work/ghidra/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts  
+2026-10-22 23:48:35 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-22 23:48:35 INFO  (HeadlessAnalyzer) Creating project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-import-test  
+2026-10-22 23:48:35 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2026-10-22 23:48:35 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2026-10-22 23:48:35 INFO  (DefaultProject) Creating project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-import-test  
+2026-10-22 23:48:35 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-22 23:48:35 INFO  (HeadlessAnalyzer)      project: /home/ubuntu/microwear_s11pro/work/ghidra-projects/S11Pro-import-test  
+2026-10-22 23:48:35 INFO  (HeadlessAnalyzer) IMPORTING: file:///home/ubuntu/microwear_s11pro/work/decoded/jlfs/00002020_app.bin  
+2026-10-22 23:48:35 INFO  (ProgramLoader) Successfully applied "-loader-baseAddr" to "Base Address" (old: "null", new: "0x0")  
+2026-10-22 23:48:35 INFO  (ProgramLoader) Using Loader: Raw Binary  
+2026-10-22 23:48:35 INFO  (ProgramLoader) Using Language/Compiler: pi32v2:LE:32:default:default  
+2026-10-22 23:48:35 INFO  (ProgramLoader) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64]  
+2026-10-22 23:48:36 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-22 23:48:36 INFO  (LocalFileSystem) /00002020_app.bin: file created (ubuntu)  
+2026-10-22 23:48:36 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /00002020_app.bin (S11Pro-import-test:/00002020_app.bin)  
+2026-10-22 23:48:36 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

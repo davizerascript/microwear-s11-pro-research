@@ -1,0 +1,40 @@
+{
+  "input_sha256": "fee5363a438fdc95d0a5f0b56053bed1ec980eebb2d9c3db345201fa504d596e",
+  "plaintext_sha256": "ab95f8c7915f48edb1130806fe2da5cd56bd8bca9ca06a266009d1d6121a577c",
+  "key_state": "0x4758",
+  "known_plaintext_magic": "JLDGAUTH",
+  "length": 144,
+  "roundtrip": true,
+  "fields": {
+    "magic_a": "4a4c4447",
+    "magic_b": "41555448",
+    "magic_str": "JLDGAUTH",
+    "total_size": 144,
+    "crc_body": 27972,
+    "field_0x0c": 0,
+    "crc_ts": 51451,
+    "chip_info_0": 77551245,
+    "chip_info_1": 410,
+    "flash_checksum": 880248153,
+    "flash_size_low": 9034,
+    "type_or_ver": 4,
+    "pad_0x1f": 0,
+    "const_0x20": 51451917,
+    "const_0x24": 3758059303,
+    "timestamp_ms": 4476330111670438162,
+    "chip_info_rest": "bd9f00f492a87ea04814b9aa26ee331d",
+    "payload_hex": "531a7c9017e27b815a81cb7477c21a4dc3af9b8957829077b46863b16d4589dcc7461032f7984cebd97f1eaa2f3f2e2d7945dec685b63f0c62960ddb0576e574adb2f6e47c841af47daf0c70d46028c3",
+    "payload_ascii": "S\u001a|\ufffd\u0017\ufffd{\ufffdZ\ufffd\ufffdtw\ufffd\u001aM\ufffd\ufffd\ufffd\ufffdW\ufffd\ufffdw\ufffdhc\ufffdmE\ufffd\ufffd\ufffdF\u00102\ufffd\ufffdL\ufffd\ufffd\u007f\u001e\ufffd/?.-yE\ufffd\ufffd\ufffd\ufffd?\fb\ufffd\r\ufffd\u0005v\ufffdt\ufffd\ufffd\ufffd\ufffd|\ufffd\u001a\ufffd}\ufffd\fp\ufffd`(\ufffd"
+  },
+  "crc_checks": {
+    "stored_crc_body": 27972,
+    "crc_candidates": {
+      "crc[0x0c:0x90]": 14846,
+      "crc[0x10:0x90]": 32247,
+      "crc[0x0a:0x90]": 63048,
+      "crc[0x00:0x90]": 5388,
+      "crc[0x0c:0x8e]": 14109,
+      "crc[0x10:0x8e]": 51512
+    }
+  }
+}
